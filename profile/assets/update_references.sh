@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Set paths
-README_SOURCE="../README.md"
+README_SOURCE="README_TXT.md"
 README_RENDERED="../README.md"
 BIB_FILE="references.bib"
 CSL_FILE="ieee.csl"
@@ -23,7 +23,7 @@ if [[ ! -f "$CSL_FILE" ]]; then
 fi
 
 # Convert using pandoc with citeproc enabled
-echo "📚 Rendering README with references..."
+echo "Rendering README with references from $BIB_FILE"
 pandoc "$README_SOURCE" \
     --from markdown \
     --to gfm \
@@ -32,4 +32,4 @@ pandoc "$README_SOURCE" \
     --csl="$CSL_FILE" \
     --output="$README_RENDERED"
 
-echo "✅ Done! Rendered file: $README_RENDERED"
+echo "Done! Rendered file: $README_RENDERED"

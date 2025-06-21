@@ -18,10 +18,12 @@ accessed through the Sleeper API and managed with `OTIS`.
 
 # References
 
-Several packages have been utilized in NUCLEARFF tools. For college
-football data, `cfbfastR`[\[1\]](#ref-cfbfastR) is utilized to obtain
-player statistics for NFL rookie prospect analyses. NFL data is obtained
-from the R package, `nflfastR`[\[2\]](#ref-nflfastR).
+Several packages have been utilized in NUCLEARFF tools. `GERALD`’
+includes college football data from `cfbfastR`\[1\] and NFL data from
+`nflfastR`\[2\]. `OTIS` utilizes data from the read-only Sleeper
+API\[3\].
+
+*References are not complete and still under development.*
 
 <div id="refs" class="references csl-bib-body" entry-spacing="0">
 
@@ -41,6 +43,14 @@ football data.” Available:
 </span><span class="csl-right-inline">S. Carl and B. Baldwin, *nflfastR:
 Functions to efficiently access NFL play by play data*. 2025. Available:
 <https://www.nflfastr.com/></span>
+
+</div>
+
+<div id="ref-sleeperAPI" class="csl-entry">
+
+<span class="csl-left-margin">\[3\]
+</span><span class="csl-right-inline">Sleeper, *Sleeper API
+documentation*. 2025. Available: <https://docs.sleeper.com></span>
 
 </div>
 
