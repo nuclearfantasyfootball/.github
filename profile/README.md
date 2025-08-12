@@ -12,9 +12,9 @@ accessed through the Sleeper API and managed with `OTIS`.
 
 **Packages (Early Stage)**
 
-- [{sena}](https://github.com/NuclearAnalyticsLab/sena)
-- [{gerald}](https://github.com/NuclearAnalyticsLab/gerald)
-- [{otis}](https://github.com/NuclearAnalyticsLab/otis)
+- [{sena}]((https://github.com/nuclearfantasyfootball/sena))
+- [{gerald}](https://github.com/nuclearfantasyfootball/gerald)
+- [{otis}](https://github.com/nuclearfantasyfootball/otis)
 
 # References
 
