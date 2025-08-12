@@ -12,7 +12,7 @@ accessed through the Sleeper API and managed with `OTIS`.
 
 **Packages (Early Stage)**
 
-- [{sena}]((https://github.com/nuclearfantasyfootball/sena))
+- [{sena}]((https://github.com/nuclearfantasyfootball/sena)
 - [{gerald}](https://github.com/nuclearfantasyfootball/gerald)
 - [{otis}](https://github.com/nuclearfantasyfootball/otis)
 
