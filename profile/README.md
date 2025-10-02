@@ -1,57 +1,49 @@
-# Nuclear Analytics Lab <img src="assets/packages.png" align="right" height="350" alt="" />
+# Nuclear Fantasy Football (NUCLEARFF) <img src="assets/packages.png" align="right" height="300" alt="NuclearFF Packages" />
 
-Nuclear Fantasy Football (NUCLEARFF) utilizes several packages for data
-management and analyses. The packages are developed for data wrangling
-and analyses of college football prospects, the National Football League
-(NFL), and fantasy football. The three packages that form the framework
-of NUCLEARFF are currently in the early stages of development. Shiny
-applications are built and managed with `SENA`, which includes functions
-for Shiny modules to easily build applications. NFL data and statistics
-are fetched and parsed through `GERALD`, while fantasy football data is
-accessed through the Sleeper API and managed with `OTIS`.
+**Nuclear Fantasy Football (NUCLEARFF)** is an ecosystem of R packages and Shiny applications for fantasy football analytics.  
 
-**Packages (Early Stage)**
+The framework is built on three core packages:  
 
-- [{sena}](https://github.com/nuclearfantasyfootball/sena)
-- [{gerald}](https://github.com/nuclearfantasyfootball/gerald)
-- [{otis}](https://github.com/nuclearfantasyfootball/otis)
+- **[{OTIS}](https://github.com/nuclearfantasyfootball/otis)** – Interface with the [Sleeper Fantasy Football API](https://docs.sleeper.com)  
+- **[{SENA}](https://github.com/nuclearfantasyfootball/sena)** – Shiny toolkit for building fantasy football applications  
+- **[{GERALD}](https://github.com/nuclearfantasyfootball/gerald)** – Football data wrangling and modeling engine  
 
-# References
+Together, these packages enable league synchronization, data pipelines, statistical modeling, and interactive dashboards for fantasy football.
 
-Several packages have been utilized in NUCLEARFF tools. `GERALD`’
-includes college football data from `cfbfastR`\[1\] and NFL data from
-`nflfastR`\[2\]. `OTIS` utilizes data from the read-only Sleeper
-API\[3\].
+---
 
-*References are not complete and still under development.*
+## 📦 Core Packages
 
-<div id="refs" class="references csl-bib-body" entry-spacing="0">
+### [OTIS](https://github.com/nuclearfantasyfootball/otis)
+**Optimized Toolkit Interfacing Sleeper**  
+An R interface to the Sleeper API. OTIS allows users to sync their fantasy football leagues by username or league ID, retrieving league data, rosters, transactions, and matchups as tidy R data frames.
 
-<div id="ref-cfbfastR" class="csl-entry">
+---
 
-<span class="csl-left-margin">\[1\]
-</span><span class="csl-right-inline">S. Gilani, A. Easwaran, J. Lee,
-and E. Hess, “cfbfastR: The SportsDataverse’s r package for college
-football data.” Available:
-<https://cfbfastR.sportsdataverse.org/></span>
+### [SENA](https://github.com/nuclearfantasyfootball/sena)
+**Shiny Essentials for NuclearFF Applications**  
+A toolkit of Shiny modules, UI components, and utilities for rapidly building fantasy football apps. SENA provides a consistent design system and reusable components to accelerate dashboard and web app development.
 
-</div>
+---
 
-<div id="ref-nflfastR" class="csl-entry">
+### [GERALD](https://github.com/nuclearfantasyfootball/gerald)
+**Gridiron Engine for Research, Analytics, and League Data**  
+An analytics engine for football data. GERALD integrates NFL and college football statistics (via [nflfastR](https://www.nflfastr.com) and [cfbfastR](https://cfbfastR.sportsdataverse.org)) to support research, modeling, prospect evaluation, and fantasy strategy.
 
-<span class="csl-left-margin">\[2\]
-</span><span class="csl-right-inline">S. Carl and B. Baldwin, *nflfastR:
-Functions to efficiently access NFL play by play data*. 2025. Available:
-<https://www.nflfastr.com/></span>
+---
 
-</div>
+## 🚀 Getting Started
 
-<div id="ref-sleeperAPI" class="csl-entry">
+All packages are in **early development** and installable from GitHub:
 
-<span class="csl-left-margin">\[3\]
-</span><span class="csl-right-inline">Sleeper, *Sleeper API
-documentation*. 2025. Available: <https://docs.sleeper.com></span>
+```r
+# install.packages("remotes")
 
-</div>
+# OTIS: Sleeper API interface
+remotes::install_github("nuclearfantasyfootball/otis")
 
-</div>
+# SENA: Shiny toolkit
+remotes::install_github("nuclearfantasyfootball/sena")
+
+# GERALD: NFL/college data
+remotes::install_github("nuclearfantasyfootball/gerald")
