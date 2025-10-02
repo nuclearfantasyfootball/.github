@@ -1,4 +1,4 @@
-# Nuclear Fantasy Football (NUCLEARFF) <img src="assets/packages.png" align="right" height="300" alt="NuclearFF Packages" />
+# Nuclear Fantasy Football (NUCLEARFF) <img src="assets/NuclearFF-Packages.png" align="right" height="300" alt="NuclearFF Packages" />
 
 **Nuclear Fantasy Football (NUCLEARFF)** is an ecosystem of R packages and Shiny applications for fantasy football analytics.  
 
