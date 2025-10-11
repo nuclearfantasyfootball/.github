@@ -1,0 +1,96 @@
+name: Bug Report
+description: Report a bug or issue for Nuclear Fantasy Football tools.
+title: "[Bug]: "
+labels: ["bug"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a bug! Please fill out all sections so a solution can be implemented as soon as possible.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Bug Description
+      description: Describe the bug that occurred. What happened? What did you expect to happen?
+      placeholder: |
+        Provide a clear and concise description of the issue.
+
+    validations:
+      required: true
+
+  - type: input
+    id: prevalence
+    attributes:
+      label: Bug Prevalence
+      description: "Is this a one-time occurrence, or does it happen frequently? Have you seen this bug before and if so, how often?"
+      placeholder: |
+        "e.g., The bug occurs every time I try to run the function `package::function()`.
+        I've seen this bug multiple times over the past week since updating to otis version `0.1.0`."
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to Reproduce
+      description: Please include a minimal reproducible example (reprex) if possible.
+      placeholder: |
+        1. What did you do to cause the bug? What was the input?
+        2. What was the output?
+        3. What did you expect to happen?
+        ...
+    validations:
+      required: true
+
+  - type: input
+    id: package_version
+    attributes:
+      label: Package Version
+      placeholder: |
+        Provide information about the package used, function, and version details.
+        e.g., `otis::get_user()` version `0.1.0`.
+
+  - type: input
+    id: r_version
+    attributes:
+      label: R Version
+      placeholder: |
+        R.version (e.g., R version 4.4.1)
+        Use the following command to get the installed R version:
+
+        > R.version$version.string
+        [1] "R version 4.4.1 (2024-06-14)"
+
+  - type: input
+    id: os_version
+    attributes:
+      label: OS Version
+      placeholder: |
+        Provide information about your operating system, including version details.
+        
+        Ubuntu 22.04 LTS
+        macOS Sequoia Version 15.7.1
+        macOS Tahoe Version 26.0.1
+        Windows 11 Version 23H2, Build 22631
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Context
+      description: Additional context, discussion, or alternatives considered.
+      placeholder: |
+        Additional solutions or pathways considered. Links to related issues, discussions, etc. Links with references to useful resources.
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      description: What is the urgency to implement a solution for the described bug?
+      default: Medium
+      options:
+        - Low
+        - Medium
+        - High
+        - Critical
