@@ -1,0 +1,46 @@
+name: Documentation Request
+description: Request documentation expansion or updates for Nuclear Fantasy Football tools.
+title: "[Docs]: "
+labels: ["documentation"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for requesting documentation. Provide a detailed description for a better understanding of the request.
+
+  - type: input
+    id: package
+    attributes:
+      label: Package for Documentation
+      description: What package or tool does this documentation request refer to?
+      placeholder: e.g., sena, otis, gerald
+
+  - type: textarea
+    id: problem_statement
+    attributes:
+      label: Problem Statement
+      description: Describe the problem and why this documentation is a need or want.
+      placeholder: |
+        What problem would this documentation solve? Why is it needed?
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Context
+      description: Additional context, discussion, or alternatives considered.
+      placeholder: |
+        Additional solutions or pathways considered. Links to related issues, discussions, etc. Links with references to useful resources.
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      description: What is the urgency for the documentation request?
+      default: Medium
+      options:
+        - Low
+        - Medium
+        - High
+        - Critical
