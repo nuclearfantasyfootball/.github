@@ -1,8 +1,8 @@
-blank_issues_enabled: false
+blank_issues_enabled: true
 contact_links:
   - name: Documentation
     url: https://github.com/nuclearfantasyfootball
     about: Check the NuclearFF README for general information.
-  - name: Discussions
+  - name: Discord Community
     url: https://discord.gg/9sJQ4yYkkF
-    about: Join the discussion on Discord for general questions, ideas, or help.
+    about: Join the Discord community for general questions, ideas, or help.
