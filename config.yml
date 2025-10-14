@@ -1,8 +1,0 @@
-blank_issues_enabled: true
-contact_links:
-  - name: Documentation
-    url: https://nuclearfantasyfootball.github.io/
-    about: Check existing documentation before opening an issue.
-  - name: Discussions
-    url: https://github.com/orgs/nuclearfantasyfootball/discussions
-    about: For general questions, ideas, or help.
